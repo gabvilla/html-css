@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teste de Responsividade</title>
+   <style>
+      /*
+         Para deixar um site responsivo é necessário alterarmos as propriedades de largura mínima e máxima da área de conteúdo. Fazendo com que o site se adapte a telas maiores e menores.
+         Também é recomendado utilizar a tag <picture> e inserir outra imagem para telas menores.
+         OBS: a tag picture é utilizada para especificar múltiplos elementos <source> para um elemento <img> contida nela.
+      */
+
+      body{
+         background-color: bisque;
+      }
+
+      main{
+         background-color: white;
+         padding: 20px;
+         border-radius: 10px;
+         min-width: 270px;
+         max-width: 800px;
+         margin: auto;
+         overflow: hidden;
+      }
+
+      img{
+         width: 100%;
+      }
+   </style>
+</head>
+<body>
+   <main>
+      <h1>Testando Responsividade</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus numquam, cum dolores qui ea consequatur libero iste ab ratione vel quisquam? Quibusdam laboriosam ad asperiores esse. Optio, possimus amet.
+      Ratione ab id est odit deleniti libero amet omnis aliquam sint mollitia? Architecto voluptate est ratione unde, aperiam ipsam adipisci, numquam, animi molestias quidem obcaecati? Cumque saepe molestiae modi quibusdam!
+      Fuga veniam rem quidem asperiores magni aperiam dolores commodi quasi expedita iusto, repellat quibusdam doloribus error qui sint incidunt corrupti totam numquam minima possimus nihil id quae non cum. Sint.</p>
+      <picture>
+         <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+         <img src="imagens/irina-blok.jpg" alt="irina-blok">
+      </picture>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus numquam, cum dolores qui ea consequatur libero iste ab ratione vel quisquam? Quibusdam laboriosam ad asperiores esse. Optio, possimus amet.
+      Ratione ab id est odit deleniti libero amet omnis aliquam sint mollitia? Architecto voluptate est ratione unde, aperiam ipsam adipisci, numquam, animi molestias quidem obcaecati? Cumque saepe molestiae modi quibusdam!
+      Fuga veniam rem quidem asperiores magni aperiam dolores commodi quasi expedita iusto, repellat quibusdam doloribus error qui sint incidunt corrupti totam numquam minima possimus nihil id quae non cum. Sint.</p>
+   </main>
+</body>
+</html>
